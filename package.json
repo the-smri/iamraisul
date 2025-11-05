@@ -1,12 +1,15 @@
 {
   "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
+  "description": "Portfolio of S M Raisul Islam",
+  "homepage": "https://the-smri.github.io/iamraisul/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -29,6 +32,7 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "^16.0.1",
+    "gh-pages": "^6.3.0",
     "postcss": "latest",
     "sass": "^1.69.5",
     "tailwindcss": "latest"
